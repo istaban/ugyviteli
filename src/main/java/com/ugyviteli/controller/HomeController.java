@@ -38,5 +38,4 @@ public class HomeController {
 		//model.addAttribute("pageTitle", "Ügyviteli");
 		return "main";
 	}
-
 }
