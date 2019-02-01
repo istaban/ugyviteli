@@ -1,0 +1,17 @@
+
+<div class="leftmenu inline" th:fragment="left">
+	<div>
+		Üdvözlünk <span sec:authentication="name">Anonymous </span>
+		<form sec:authorize="isAuthenticated()" id="frmlogout"
+			th:action="@{/logout}" method="post">
+			 <a href="javascript:{}"
+				onclick="document.getElementById('frmlogout').submit(); return false;">Kijelentkezés</a>
+		</form>
+	</div>
+	<div>
+		<ul>
+			<li><a href="customers">Ügyfelek</a></li>
+
+		</ul>
+	</div>
+</div>
